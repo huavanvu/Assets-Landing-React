@@ -13,7 +13,7 @@ const indexRoute = [
         component: Recruitment
     },
     {
-        path: "/detailrecruitment",
+        path: "/recruitment/detail",
         exact: true,
         component: DetailRecruitment
     }

@@ -10,7 +10,7 @@ class Homelayout extends Component {
                   <span className="navbar-toggler-icon" />
                
                 </button>
-                <a className="navbar-brand pr-5" href="/"><img className="logo" src="resources/asset icon.png" /></a>
+                <a className="navbar-brand pr-5" href="/"><img className="logo" src="/resources/asset icon.png" /></a>
                 <div className="collapse navbar-collapse" id="assetNavbar">
                   <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
@@ -36,7 +36,7 @@ class Homelayout extends Component {
               <div className="container-fluid">
                 <div className="row">
                   <div className="col-12 col-md-6">
-                    <img className="w-25 mb-2" src="./resources/asset icon.png" alt="" />
+                    <a href="/"><img className="w-25 mb-2" src="/resources/asset icon.png" alt="" /></a>
                     <div className="color-1C6BAE f-size-13">Asset là trang thông tin về thị trường bất động sản Việt Nam</div>
                     <div className="color-1C6BAE f-size-13">Được xây dựng và phát triển bởi Công ty TNHH Giải Pháp Công Nghệ Dữ Liệu Asset</div>
                   </div>
@@ -46,15 +46,15 @@ class Homelayout extends Component {
                     </div>
                     <ul className="nav justify-content-end float-right">
                       <li className="nav-item">
-                        <div className="nav-link active" href="#"><img className="w-100" src="./resources/logo doi tac chien luoc.png" alt="" /></div>
+                        <div className="nav-link active" href="#"><img className="w-100" src="/resources/logo doi tac chien luoc.png" alt="" /></div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </footer>
-            <div id="social-fixed" className="fixed-top d-none d-xl-block" style={{top: '25%', left: '2%', width: '50px'}}>
-              <div className="flex-column d-inline-flex">
+            <div id="social-fixed" className="fixed-top d-none d-xl-block" style={{top: '25%', width: '50px'}}>
+              <div className="flex-column d-inline-flex p-3 social-fixed__container">
                 <span><a className="d-inline-block mb-4" href="https://www.facebook.com/assetvn/" target="_blank"><img style={{width: '48px'}} src="./resources/facebook icon.png" alt="" /></a></span>
                 <span><a className="d-inline-block mb-4" href="https://zalo.me/2524048617738660004" target="_blank"><img style={{width: '48px'}} src="./resources/zalo icon.png" alt="" /></a></span>
                 <span><a className="d-inline-block mb-4" href="https://www.linkedin.com/company/assetvn/" target="_blank"><img style={{width: '48px'}} src="./resources/linkedin icon.png" alt="" /></a></span>

@@ -16,7 +16,7 @@ class Recruitment extends Component{
       <div className="container">
         <div className="row">
           <div className="col-6 col-md-4 col-lg-3 mb-3 wow fadeInUp">
-            <div className="recruitment-staff-item h-100">
+           <a href="/recruitment/detail">  <div className="recruitment-staff-item h-100">
               <div className="card text-left">
                 <img className="card-img-top" src="./resources/tuyendung/ceoassisstant.png" alt="" />
               </div>
@@ -29,6 +29,8 @@ class Recruitment extends Component{
                 </a>
               </div>
             </div>
+        </a>
+          
           </div>
           <div className="col-6 col-md-4 col-lg-3 mb-3 wow fadeInUp">
             <div className="recruitment-staff-item h-100">

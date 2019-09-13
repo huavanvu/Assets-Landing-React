@@ -27,7 +27,7 @@ class HomePage extends Component {
                               <div className="asset-about-have__title text-center">
                                 <h2>Tìm kiếm Bất Động Sản</h2>
                               </div>
-                              <div className="asset-about-have__title-description">
+                              <div className="asset-about-have__title-description p-0">
                                 Từ nhà riêng, căn hộ chung cư, đất nền, nhà phố, biệt
                                 thự... cho đến các dự án bất động sản lớn, nhỏ, mọi
                                 Asseter đều có thể tự do tìm kiếm tất cả mặt hàng bất
@@ -41,7 +41,7 @@ class HomePage extends Component {
                               <div className="asset-about-have__title text-center">
                                 <h2>Thẩm định giá Bất Động Sản</h2>
                               </div>
-                              <div className="asset-about-have__title-description">
+                              <div className="asset-about-have__title-description p-0">
                                 Được đảm nhận bởi các chuyên gia thẩm định giá hàng
                                 đầu của Asset, hoàn toàn miễn phí.
                               </div>
@@ -51,7 +51,7 @@ class HomePage extends Component {
                               <div className="asset-about-have__title text-center">
                                 <h2>Thông tin Bất Động Sản</h2>
                               </div>
-                              <div className="asset-about-have__title-description">
+                              <div className="asset-about-have__title-description p-0">
                                 Quy hoạch sử dụng đất, quy hoạch giao
                                 thông, quy hoạch xây dựng... pháp lý bất
                                 động sản, lịch sử giá, lịch sử giao dịch và hơn
@@ -63,7 +63,7 @@ class HomePage extends Component {
                               <div className="asset-about-have__title text-center">
                                 <h2>Tư vấn pháp lý</h2>
                               </div>
-                              <div className="asset-about-have__title-description">
+                              <div className="asset-about-have__title-description p-0">
                                 Phụ trách bởi công ty Luật đối tác có nhiều
                                 năm kinh nghiệm trong lĩnh vực tư vấn
                                 pháp lý dự án bất động sản, pháp lý đầu
@@ -75,7 +75,7 @@ class HomePage extends Component {
                               <div className="asset-about-have__title text-center">
                                 <h2>Đánh giá Bất Động Sản</h2>
                               </div>
-                              <div className="asset-about-have__title-description">
+                              <div className="asset-about-have__title-description p-0">
                                 Mọi sản phẩm bất động sản đều sẽ đi kèm
                                 với đánh giá chân thật nhất từ Asset cũng
                                 như từ những người đã tiếp xúc trực tiếp
@@ -87,7 +87,7 @@ class HomePage extends Component {
                               <div className="asset-about-have__title text-center">
                                 <h2>Tin tức Bất Động Sản</h2>
                               </div>
-                              <div className="asset-about-have__title-description">
+                              <div className="asset-about-have__title-description p-0">
                                 Cung cấp cho bạn những thông tin cập
                                 nhật mới nhất về chính sách, thị trường bất
                                 động sản. Từ đó, giúp bạn nhìn thấy được
@@ -191,24 +191,24 @@ class HomePage extends Component {
                       <div className="row">
                         <div className="col-12"><h2 className="text-center pb-3">Gia nhập <span className="color-1C6BAE">ngôi nhà chung Asset</span></h2></div>
                         <div className="col-3 text-center">
-                          <div className="quanlity color-1C6BAE">
-                            8
+                          <div className="quanlity color-1C6BAE" data-count="8">
+                            0
                           </div>
                           <div className="name-department">
                             Makerting
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity color-1C6BAE">
-                            100
+                          <div className="quanlity color-1C6BAE" data-count="20">
+                            0
                           </div>
                           <div className="name-department">
                             Web Developer
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity color-1C6BAE">
-                            10
+                          <div className="quanlity color-1C6BAE" data-count="8">
+                            0
                           </div>
                           <div className="name-department">
                             Call Center
