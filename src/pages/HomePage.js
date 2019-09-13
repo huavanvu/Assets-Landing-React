@@ -214,11 +214,11 @@ class HomePage extends Component {
                             Call Center
                           </div>
                         </div>
-                        <div className="col-3 text-center">
-                          <div className="quanlity color-1C6BAE">
-                       
+                        <div className="col-3 text-center add_more">
+                          <div className="mt-2">
+                          <img style={{width:'43%'}} className="my-2" src="/resources/plus.png" alt="" />
                           </div>
-                          <img style={{width:'52%'}} className="my-2" src="/resources/plus.png" alt="" />
+                       
                           <div className="name-department">
                             Và rất nhiều vị trí
                           </div>

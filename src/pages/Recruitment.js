@@ -26,7 +26,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">CEO ASSISTANT</h4>
                 </div>
-                <span className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <span className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="/resources/tuyendung/icon tuyendung.png" alt="" />
                 </span>
               </div>
@@ -43,7 +43,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">PHÓ GIÁM ĐỐC KHỐI THU THẬP &amp; XỬ LÝ DỮ LIỆU</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="/resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -58,7 +58,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">CONTENT MARKETING</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -73,7 +73,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">NHÂN VIÊN NHẬP LIỆU</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -88,7 +88,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">XỬ LÝ DỮ LIỆU CAD</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -103,7 +103,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">ADMIN</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -118,7 +118,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">CALL CENTER (CSKH)</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -133,7 +133,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">PR MARKETING</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -148,7 +148,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">FRONT-END</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -163,7 +163,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">BACK-END</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -178,7 +178,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">CHUYÊN VIÊN TUYỂN DỤNG</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -193,7 +193,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">PHÁT TRIỂN THỊ TRƯỜNG</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -222,7 +222,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">THỰC TẬP SINH CONTENT MARKETING</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -237,7 +237,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">THỰC TẬP SINH XỬ LÝ DỮ LIỆU CAD</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -252,7 +252,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">THỰC TẬP SINH HÀNH CHÍNH NHÂN SỰ</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
@@ -267,7 +267,7 @@ class Recruitment extends Component{
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">THỰC TẬP SINH WEB DEVELOPER</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
+                <a className="btn card-footer d-block mb-0 pt-0 pl-1 pl-1 pb-0">
                   Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
