@@ -9,12 +9,12 @@ class DetailRecruitment extends Component {
     <div  style={{backgroundColor:'rgb(235, 233, 230)'}} className="container">
       <div className="recruitment-detail__header pb-5 d-flex justify-content-center flex-column align-items-center">
         <div className="recruitment-detail__header-job-name">
-          CEO ASSISSTANT
+          CEO ASSISTANT
         </div>
         <div className="recruitment-detail__header-underline" />
       </div>
       <div className="recruitment-detail-content">
-        <img className="w-25 working-daily" src="./resources/tuyendung/ceoassisstant.png" alt="" />
+        <img className="w-25 working-daily" src="/resources/tuyendung/ceoassisstant.png" alt="" />
         <span className="recruitment-detail-content__full-info-job">
           <div className="recruitment-detail-content__title-section">Job description:</div>
           <span className="recruitment-detail-content__description">

@@ -9,7 +9,7 @@ class HomePage extends Component {
             <section id="about" className="scrollspy asset-section">
               <div className="asset-section__header d-flex justify-content-center flex-column align-items-center">
                 <div className="asset-section__header-logo wow fadeIn pb-4">
-                  <img src="./resources/icon asset nam mau.png" alt="" />
+                  <img src="/resources/icon asset nam mau.png" alt="" style={{height:'auto'}} />
                 </div>
                 <div className="asset-section__header-title wow fadeIn" data-wow-delay="300ms">
                   <h2 className="color-1C6BAE">CÓ GÌ ?</h2>
@@ -118,7 +118,7 @@ class HomePage extends Component {
                     <div className="col-6 image-ads pb-45 wow slideInLeft fadeIn" data-wow-duration="800ms" data-src-image-ads>
                       <div className="text-center"><img className="w-75" src="./resources/thong tin duoc kiem chung.png" alt="" /></div>
                       <div className="asset-about-have__title text-center">
-                        <h2>Dữ liệu khổng </h2>
+                        <h2>Dữ liệu khổng lồ</h2>
                       </div>
                       <div className="asset-about-have__title-description">
                         Để thể hiện một cách đầy đủ nhất toàn
@@ -216,16 +216,18 @@ class HomePage extends Component {
                         </div>
                         <div className="col-3 text-center">
                           <div className="quanlity color-1C6BAE">
-                            <img src="./resources/plus.png" alt="" />
+                       
                           </div>
+                          <img style={{width:'52%'}} className="my-2" src="/resources/plus.png" alt="" />
                           <div className="name-department">
                             Và rất nhiều vị trí
                           </div>
+                       
                         </div>
                       </div>
                       <div className="row pt-3 pt-md-5">
                         <div className="col-12 text-center">
-                          <button type="button" className="btn btn-raised btn-lg join-now"><a href="/tuyen-dung.html" target="_blank" rel="noopener noreferrer"><i className="fa fa-edit" />Hãy gia nhập ngay</a></button>
+                          <button type="button" className="btn btn-raised btn-lg join-now"><a href="/recruitment" target="_blank" rel="noopener noreferrer"><i className="fa fa-edit" />Hãy gia nhập ngay</a></button>
                         </div>
                       </div>
                     </div>

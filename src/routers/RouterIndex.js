@@ -4,9 +4,9 @@ import indexRoute from "../routes/index.routes";
 import { Switch, Route, BrowserRouter as Router  } from "react-router-dom";
 class RouterIndex extends Component {
   render() {
-    return (
+    return (<Router>
         <HomeLayout>
-      <Router>
+      
         <Switch>
           {indexRoute.map((route, index) => {
             return (
@@ -19,8 +19,10 @@ class RouterIndex extends Component {
             );
           })}
         </Switch>
-      </Router>
+     
       </HomeLayout>
+
+</Router>
     );
   }
 }

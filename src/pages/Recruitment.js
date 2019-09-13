@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 class Recruitment extends Component{
 
     render(){
@@ -16,20 +17,21 @@ class Recruitment extends Component{
       <div className="container">
         <div className="row">
           <div className="col-6 col-md-4 col-lg-3 mb-3 wow fadeInUp">
-           <a href="/recruitment/detail">  <div className="recruitment-staff-item h-100">
+          <Link to="/recruitment/detail">
+            <div className="recruitment-staff-item h-100">
               <div className="card text-left">
-                <img className="card-img-top" src="./resources/tuyendung/ceoassisstant.png" alt="" />
+                <img className="card-img-top" src="/resources/tuyendung/ceoassisstant.png" alt="" />
               </div>
               <div>
                 <div className="card-body">
                   <h4 className="card-title text-center name-department">CEO ASSISTANT</h4>
                 </div>
-                <a className="btn card-footer d-block mb-0 pt-0 pb-0">
-                  Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
-                </a>
+                <span className="btn card-footer d-block mb-0 pt-0 pb-0">
+                  Xem chi tiết <img className="icon" src="/resources/tuyendung/icon tuyendung.png" alt="" />
+                </span>
               </div>
             </div>
-        </a>
+            </Link>
           
           </div>
           <div className="col-6 col-md-4 col-lg-3 mb-3 wow fadeInUp">
@@ -42,7 +44,7 @@ class Recruitment extends Component{
                   <h4 className="card-title text-center name-department">PHÓ GIÁM ĐỐC KHỐI THU THẬP &amp; XỬ LÝ DỮ LIỆU</h4>
                 </div>
                 <a className="btn card-footer d-block mb-0 pt-0 pb-0">
-                  Xem chi tiết <img className="icon" src="./resources/tuyendung/icon tuyendung.png" alt="" />
+                  Xem chi tiết <img className="icon" src="/resources/tuyendung/icon tuyendung.png" alt="" />
                 </a>
               </div>
             </div>

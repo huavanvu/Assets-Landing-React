@@ -10,22 +10,22 @@ class Homelayout extends Component {
                   <span className="navbar-toggler-icon" />
                
                 </button>
-                <a className="navbar-brand pr-5" href="/"><img className="logo" src="/resources/asset icon.png" /></a>
+                <Link to="/"><img className="logo" src="/resources/asset icon.png" alt=""/></Link>
                 <div className="collapse navbar-collapse" id="assetNavbar">
                   <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                      <a className="nav-link" href="#about">Giới thiệu</a>
+                      <a className="nav-link">Giới thiệu</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#advantage">Ưu thế</a>
+                      <a className="nav-link" href="#what-is-asset" >Ưu thế</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#what-is-asset">Asset là gì ?</a>
+                      <a className="nav-link" href="#about" >Asset là gì ?</a>
                     </li>
                   </ul>
                   <ul className="navbar-nav">
                     <li className="nav-item">
-                      <a className="nav-link" href="/recruitment">Tuyển dụng</a>
+                    <Link className="nav-link" to="/recruitment">Tuyển dụng</Link>
                     </li>
                   </ul>
                 </div>
