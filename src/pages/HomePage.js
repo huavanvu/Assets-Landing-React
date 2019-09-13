@@ -9,7 +9,7 @@ class HomePage extends Component {
             <section id="about" className="scrollspy asset-section">
               <div className="asset-section__header d-flex justify-content-center flex-column align-items-center">
                 <div className="asset-section__header-logo wow fadeIn pb-4">
-                  <img src="/resources/icon asset nam mau.png" alt="" style={{height:'auto'}} />
+                  <img src="/resources/icon asset nam mau.png" alt="" style={{height:'20%'}} />
                 </div>
                 <div className="asset-section__header-title wow fadeIn" data-wow-delay="300ms">
                   <h2 className="color-1C6BAE">CÓ GÌ ?</h2>

@@ -4,7 +4,7 @@ class Homelayout extends Component {
     render() {
         return (
             <div>
-            <nav id="asset-nav" className="navbar navbar-expand-lg navbar-light bg-transparent">
+            <nav id="asset-nav" className="navbar navbar-expand-lg navbar-light bg-transparent py-2">
               <div className="container">
                 <button className="pull-left navbar-toggler" type="button" data-toggle="collapse" data-target="#assetNavbar" aria-controls="assetNavbar" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon" />
@@ -12,16 +12,17 @@ class Homelayout extends Component {
                 </button>
                 <Link to="/"><img className="logo" src="/resources/asset icon.png" alt=""/></Link>
                 <div className="collapse navbar-collapse" id="assetNavbar">
-                  <ul className="navbar-nav mr-auto">
+                  <ul className="navbar-nav mr-auto pl-2">
                     <li className="nav-item">
                       <a className="nav-link">Giới thiệu</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#what-is-asset" >Ưu thế</a>
-                    </li>
-                    <li className="nav-item">
                       <a className="nav-link" href="#about" >Asset là gì ?</a>
                     </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#what-is-asset" >Ưu thế</a>
+                    </li>
+                   
                   </ul>
                   <ul className="navbar-nav">
                     <li className="nav-item">

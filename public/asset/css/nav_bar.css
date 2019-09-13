@@ -278,7 +278,9 @@ body, html {
     width: 20%;
   }
 }
-
+#asset-banner .asset-banner__bg img {
+  height: 20%;
+}
 @media (max-width: 1024px) {
   #asset-banner .asset-banner__bg img {
     width: 75%;
