@@ -32,20 +32,20 @@
     <script>
       window.addEventListener('DOMContentLoaded', () => {
         new WOW().init();
-        if(window.location.pathname ==='/') {
-          $('body').scrollspy({target: ".navbar", offset: 30});   
-          $("#assetNavbar a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-                window.location.hash = hash;
-              });
-            }
-          });
-        }
+        // if(window.location.pathname ==='/') {
+        //   $('body').scrollspy({target: ".navbar", offset: 30});   
+        //   $("#assetNavbar a").on('click', function(event) {
+        //     if (this.hash !== "") {
+        //       event.preventDefault();
+        //       var hash = this.hash;
+        //       $('html, body').animate({
+        //         scrollTop: $(hash).offset().top
+        //       }, 800, function(){
+        //         window.location.hash = hash;
+        //       });
+        //     }
+        //   });
+        // }
     }); 
     </script>
     <script>

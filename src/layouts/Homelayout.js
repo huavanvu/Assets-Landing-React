@@ -11,21 +11,21 @@ class Homelayout extends Component {
   }
 
   componentWillMount() {
-    if(window.location.pathname === '/') {
-      this.setState({
-        isIndex: true
-      })
-    }
-    console.log(this.state);
   }
 
-  _handleMenu = (e) => {
-    console.log(e);
+  _handleMenu = async(e, path) => {
+    if(window.location.pathname === '/') {
+      await this.setState({isIndex: true})
+    } else {
+      await this.setState({isIndex: false})
+    }
   }
 
   
   
   render() {
+    console.log(this.state);
+    const {isIndex} = this.state;
     return (
       <div>
         <nav
@@ -44,7 +44,7 @@ class Homelayout extends Component {
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <Link to="/" onClick={this._handleMenu}>
+            <Link to="/">
               <img className="logo" src="/resources/asset icon.png" alt="" />
             </Link>
             <div className="collapse navbar-collapse" id="assetNavbar">
@@ -53,18 +53,18 @@ class Homelayout extends Component {
                   <NavLink to="/about" activeClassName="active" className="nav-link">Giới thiệu</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a onClick={(e) => this._handleMenu(e, '#about')} className="nav-link" href="#about">
+                  <NavLink onClick={(e) => this._handleMenu(e, '#about')} activeClassName="active" className="nav-link" to={isIndex ? '#about' : '/#about'}>
                     Asset là gì ?
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a onClick={this._handleMenu} className="nav-link" href="#advantage">
+                  <NavLink onClick={(e) => this._handleMenu(e, '#advantage')} activeClassName="active" className="nav-link" to={isIndex ? '#advantage' : '/#advantage'}>
                     Ưu thế
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
               <ul className="navbar-nav">
-                <li onClick={this._handleMenu} className="nav-item pl-2">
+                <li  className="nav-item pl-2">
                   <NavLink activeClassName="active" className="nav-link" to="/recruitment">
                     {" "}
                     Tuyển dụng
