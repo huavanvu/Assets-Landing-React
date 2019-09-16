@@ -17,7 +17,12 @@
     <title>Asset Việt Nam</title>
   </head>
   <body>
-    <div  id="root"></div>
+    <div id="root"></div>
+    <div id="to-top">
+      <button class="btn"> 
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
@@ -27,36 +32,31 @@
     <script>
       window.addEventListener('DOMContentLoaded', () => {
         new WOW().init();
-        $('body').scrollspy({target: ".navbar", offset: 30});   
-        $("#assetNavbar a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-              window.location.hash = hash;
-            });
+        if(window.location.pathname ==='/') {
+          $('body').scrollspy({target: ".navbar", offset: 30});   
+          $("#assetNavbar a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+            }
+          });
         }
-      });
-    //   var header = $("#asset-nav");
-    //   $(window).scroll(function() {    
-    //     var scroll = $(window).scrollTop();
-    
-    //     if (scroll >= 100) {
-    //         header.addClass("active-scroll");
-    //     } else {
-    //         header.removeClass("active-scroll");
-    //     }
-    // });
     }); 
     </script>
     <script>
-      let start = 0
+      window.addEventListener('DOMContentLoaded', () => {
+      if(window.location.pathname ==='/') {
+        console.log(window.location.pathname);
+        let start = 0
         $(window).scroll(function() {
         let oTop = $('#advantage').offset().top - window.innerHeight;
         if (start == 0 && $(window).scrollTop() > oTop) {
-          $('#advantage .quanlity').each(function() {
+          $('#advantage .quanlity.counter').each(function() {
             let $this = $(this),
               countTo = $this.attr('data-count');
             $({
@@ -78,6 +78,30 @@
           start = 1;
         }
         });
+      }
+    });
+    </script>
+    <script>
+      //For menu click outside hide
+      $(function() {
+        $(document).click(function (event) {
+          $('#asset-nav .navbar-collapse').collapse('hide');
+        });
+      });
+      $(function() {
+        const buttonScrollTop = document.getElementById('to-top');
+        buttonScrollTop.addEventListener('click', function () { 
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+        })
+        $(window).scroll(function() {
+          if($(window).scrollTop() > 300 || $(window).scrollTop()) {
+            buttonScrollTop.style.display = "block";
+          } else {
+            buttonScrollTop.style.display = "none";
+          }
+        });
+        // buttonScrollTop.style.display = "none";
+      });
     </script>
  
 </body>

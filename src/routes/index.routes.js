@@ -1,6 +1,7 @@
 import HomePage from '../pages/HomePage';
 import Recruitment from '../pages/Recruitment';
 import DetailRecruitment from '../pages/DetailRecruitment';
+import AssetAbout from '../pages/AssetAbout';
 const indexRoute = [
     {
         path: "/",
@@ -16,6 +17,11 @@ const indexRoute = [
         path: "/recruitment/detail",
         exact: true,
         component: DetailRecruitment
+    },
+    {
+        path: "/about",
+        exact: false,
+        component: AssetAbout
     }
 ]
 

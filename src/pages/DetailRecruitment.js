@@ -74,6 +74,11 @@ class DetailRecruitment extends Component {
           </span>
         </span>
       </div>
+      <div className="recruitment-detail__footer">
+        <div className="d-flex justify-content-end">
+          <button type="button" class="btn btn-lg bg-danger"><a className="apply-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdowcuqcF4-TCewPrBCxHMiWroLm0lQfdoMqhdqVSU6jPygmQ/viewform"  target="_blank">Aplly Here</a></button>
+        </div>
+      </div>
     </div>
   </div>
 </section>

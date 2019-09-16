@@ -7,13 +7,51 @@
   transition: 0.6s ease-out;
 }
 
-#asset-nav ul.navbar-nav li.nav-item.active::after {
+#asset-nav ul.navbar-nav li.nav-item {
+  position: relative;
+}
+
+#asset-nav ul.navbar-nav li.nav-item a.active::after {
   position: absolute;
   width: 100%;
   height: 4px;
   background-color: #2269AB;
   content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
 }
+
+#asset-nav ul.navbar-nav li.nav-item a:hover::after {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #2269AB;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  transition: .3s;
+}
+
+#asset-nav ul.navbar-nav li.nav-item a::after {
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background-color: #2269AB;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  transition: .2s;
+}
+
+@media (max-width: 991.98px) {
+  #asset-nav ul.navbar-nav li.nav-item a::after {
+    display: none !important;
+  }
+}
+
 #asset-nav.active-scroll {
   position: fixed;
   /* transition: 0.6s ease-out; */
@@ -21,6 +59,15 @@
   width: 100%;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+/* to top */
+#to-top {
+  /* position: absolute; */
+  right: 2%;
+  bottom: 5%;
+  position: fixed;
+  display: none;
 }
 
 /* banner-nha */
@@ -105,7 +152,8 @@ section .asset-about-have__title h2 {
 }
 
 section.join-with-asset-team .quanlity img{
-  width: 72px;
+  width: 60px;
+  transform: translateY(-6%);
 }
 
 section .asset-about-have__title-description {
@@ -156,7 +204,7 @@ section .asset-about-have__title-description {
   transition: 0.24s;
 }
 
-.recruitment-staff-item .card text-left:hover img , .recruitment-staff-item img:hover{
+.recruitment-staff-item:hover img{
   transition: 0.24s;
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -164,6 +212,11 @@ section .asset-about-have__title-description {
   -ms-filter: grayscale(0);
   filter: grayscale(0);
 }
+
+#staff a:hover {
+  text-decoration: none !important;
+}
+
 
 .recruitment-staff-item .card-footer {
   background-color: #707070;
@@ -177,7 +230,8 @@ section .asset-about-have__title-description {
 
 .recruitment-staff-item:hover {
   border-color: #1C6BAE;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+  box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.25), 0px 8px 6px 0px rgba(0, 0, 0, 0);
 }
 
 .recruitment-staff-item:hover .card-footer {
@@ -220,6 +274,10 @@ section .asset-about-have__title-description {
 #recruitment-detail .recruitment-detail-content__description {
   font-size: 24px;
 }
+
+#recruitment-detail .recruitment-detail__footer a {
+  color: white;
+}
 /* footer-nha */
 footer .partner {
   font-weight: 500;
@@ -229,15 +287,40 @@ footer {
   border-top: 1px solid #707070;
 }
 
+/* social-fixed */
+
 #social-fixed .social-fixed__container {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   background-color: #fff;
   border-radius: 15px;
 }
+
+#social-fixed .social-fixed__container a img {
+  transition: 0.1s;
+  border-radius: 50%;
+}
+
+#social-fixed .social-fixed__container a img:hover{
+  box-shadow: -1px 4px 20px rgba(0, 0, 0, 0.07), 0px 6px 12px rgba(0,0,0,0.22);
+  background-color: transparent !important;
+  opacity: 0.75;
+}
 /* default-nha */
 body, html {
   width: 100%;
   height: 100%;
+}
+
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.asset-name {
+  color: #1C6BAE;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 .navbar-toggle.navbar-left {
@@ -311,7 +394,7 @@ body, html {
     font-size: 28px;
   }
   section.join-with-asset-team .quanlity img{
-    width: 28px;
+    width: 26px;
   }
   section.asset-section {
     margin-bottom: 0px;
@@ -328,6 +411,7 @@ body, html {
   }
   section .asset-about-have__title h2 {
     font-size: 18px;
+    font-weight: 500;
   }
   .recruitment-staff-item .name-department {
     font-size: 18px;
@@ -363,7 +447,7 @@ body, html {
     font-size: 26px;
   }
   section.join-with-asset-team .quanlity img{
-    width: 26px;
+    width: 24px;
   }
   #asset-banner .asset-banner__bg img {
     width: 95%;
@@ -390,6 +474,10 @@ body, html {
   .p-section-top {
     padding-top: 45px;
   }
+  .asset-name {
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -412,7 +500,7 @@ body, html {
   }
 
   section.join-with-asset-team .quanlity img{
-    width: 24px;
+    width: 22px;
   }
 
   section.join-with-asset-team .name-department {

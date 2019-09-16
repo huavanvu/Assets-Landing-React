@@ -4,7 +4,7 @@ class HomePage extends Component {
   render(){
     return( <>
           <div id="asset-banner">
-              <div className="asset-banner__bg wow slideInLeft" data-wow-duration="1900ms"><img src="resources/asset network.png" alt="" /></div>
+              <div className="asset-banner__bg wow slideInLeft" data-wow-duration="1900ms"><img src="resources/asset network-1.png" alt="" /></div>
             </div>
             <section id="about" className="scrollspy asset-section">
               <div className="asset-section__header d-flex justify-content-center flex-column align-items-center">
@@ -186,12 +186,12 @@ class HomePage extends Component {
             <section id="advantage" className="scrollspy join-with-asset-team pt-3 pt-md-5 pb-3 pb-md-5">
               <div className="asset-section__container">
                 <div className="container-fluid">
-                  <div className="row">
+                  <div className="row align-items-center">
                     <div className="col-12 col-xl-6">
                       <div className="row">
                         <div className="col-12"><h2 className="text-center pb-3">Gia nhập <span className="color-1C6BAE">ngôi nhà chung Asset</span></h2></div>
                         <div className="col-3 text-center">
-                          <div className="quanlity color-1C6BAE" data-count="8">
+                          <div className="quanlity counter color-1C6BAE" data-count="8">
                             0
                           </div>
                           <div className="name-department">
@@ -199,35 +199,33 @@ class HomePage extends Component {
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity color-1C6BAE" data-count="20">
+                          <div className="quanlity counter color-1C6BAE" data-count="20">
                             0
                           </div>
                           <div className="name-department">
-                            Web Developer
+                            Phát triển thị trường
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity color-1C6BAE" data-count="8">
+                          <div className="quanlity counter color-1C6BAE" data-count="8">
                             0
                           </div>
                           <div className="name-department">
                             Call Center
                           </div>
                         </div>
-                        <div className="col-3 text-center add_more">
-                          <div className="mt-2">
-                          <img style={{width:'43%'}} className="my-2" src="/resources/plus.png" alt="" />
+                        <div className="col-3 text-center">
+                          <div className="quanlity more-positison-staff color-1C6BAE">
+                            <img className="" src="/resources/plus.png" alt="" />
                           </div>
-                       
                           <div className="name-department">
                             Và rất nhiều vị trí
                           </div>
-                       
                         </div>
                       </div>
                       <div className="row pt-3 pt-md-5">
                         <div className="col-12 text-center">
-                          <button type="button" className="btn btn-raised btn-lg join-now"><a href="/recruitment" target="_blank" rel="noopener noreferrer"><i className="fa fa-edit" />Hãy gia nhập ngay</a></button>
+                          <button type="button" className="btn btn-raised btn-lg join-now"><a href="/recruitment" target="_blank" rel="noopener noreferrer"><i className="fa fa-edit" /> Hãy gia nhập ngay</a></button>
                         </div>
                       </div>
                     </div>

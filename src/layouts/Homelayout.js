@@ -1,6 +1,30 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import {withRouter} from 'react-router-dom';
 class Homelayout extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuActive: null,
+      isIndex: false
+    }
+  }
+
+  componentWillMount() {
+    if(window.location.pathname === '/') {
+      this.setState({
+        isIndex: true
+      })
+    }
+    console.log(this.state);
+  }
+
+  _handleMenu = (e) => {
+    console.log(e);
+  }
+
+  
+  
   render() {
     return (
       <div>
@@ -20,31 +44,31 @@ class Homelayout extends Component {
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <Link to="/">
+            <Link to="/" onClick={this._handleMenu}>
               <img className="logo" src="/resources/asset icon.png" alt="" />
             </Link>
             <div className="collapse navbar-collapse" id="assetNavbar">
               <ul className="navbar-nav mr-auto pl-2">
                 <li className="nav-item">
-                  <a className="nav-link">Giới thiệu</a>
+                  <NavLink to="/about" activeClassName="active" className="nav-link">Giới thiệu</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#about">
+                  <a onClick={(e) => this._handleMenu(e, '#about')} className="nav-link" href="#about">
                     Asset là gì ?
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#what-is-asset">
+                  <a onClick={this._handleMenu} className="nav-link" href="#advantage">
                     Ưu thế
                   </a>
                 </li>
               </ul>
               <ul className="navbar-nav">
-                <li className="nav-item pl-2">
-                  <Link className="nav-link" to="/recruitment">
+                <li onClick={this._handleMenu} className="nav-item pl-2">
+                  <NavLink activeClassName="active" className="nav-link" to="/recruitment">
                     {" "}
                     Tuyển dụng
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -101,6 +125,7 @@ class Homelayout extends Component {
                 className="d-inline-block mb-4"
                 href="https://www.facebook.com/assetvn/"
                 target="_blank"
+                title="Connect Facebook With Asset"
               >
                 <img
                   style={{ width: "48px" }}
@@ -114,6 +139,7 @@ class Homelayout extends Component {
                 className="d-inline-block mb-4"
                 href="https://zalo.me/2524048617738660004"
                 target="_blank"
+                title="Connect Zalo With Asset"
               >
                 <img
                   style={{ width: "48px" }}
@@ -124,9 +150,10 @@ class Homelayout extends Component {
             </span>
             <span>
               <a
-                className="d-inline-block mb-4"
+                className="d-inline-block"
                 href="https://www.linkedin.com/company/assetvn/"
                 target="_blank"
+                title="Connect LinkedIn With Asset"
               >
                 <img
                   style={{ width: "48px" }}

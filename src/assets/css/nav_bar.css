@@ -154,10 +154,13 @@ section .asset-about-have__title-description {
   filter: grayscale(100%);
   transition: 0.24s;
 }
+#staff a:hover {
+  text-decoration: none !important;
+}
 
-.recruitment-staff-item .card text-left:hover img , .recruitment-staff-item img:hover{
+.recruitment-staff-item:hover img {
   transition: 0.24s;
-  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0) !important;
   -moz-filter: grayscale(0);
   -o-filter: grayscale(0);
   -ms-filter: grayscale(0);
@@ -219,6 +222,16 @@ section .asset-about-have__title-description {
 #recruitment-detail .recruitment-detail-content__description {
   font-size: 24px;
 }
+
+/* fixed left */
+#social-fixed .social-fixed__container a img{
+  transition: 0.2s;
+}
+#social-fixed .social-fixed__container a img:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 0.2s;
+}
+
 /* footer-nha */
 footer .partner {
   font-weight: 500;
@@ -232,6 +245,7 @@ body, html {
   width: 100%;
   height: 100%;
 }
+
 
 .navbar-toggle.navbar-left {
   float: left;
