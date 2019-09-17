@@ -190,15 +190,15 @@ class HomePage extends Component {
                       <div className="row">
                         <div className="col-12"><h2 className="text-center pb-3">Gia nhập <span className="color-1C6BAE">ngôi nhà chung Asset</span></h2></div>
                         <div className="col-3 text-center">
-                          <div className="quanlity counter color-1C6BAE" data-count="185">
+                          <div className="quanlity counter color-1C6BAE" data-count="20">
                             0
                           </div>
                           <div className="name-department">
-                            Makerting
+                            Marketing
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity counter color-1C6BAE" data-count="950">
+                          <div className="quanlity counter color-1C6BAE" data-count="25">
                             0
                           </div>
                           <div className="name-department">
@@ -206,7 +206,7 @@ class HomePage extends Component {
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity counter color-1C6BAE" data-count="254">
+                          <div className="quanlity counter color-1C6BAE" data-count="10">
                             0
                           </div>
                           <div className="name-department">

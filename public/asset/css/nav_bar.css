@@ -69,8 +69,16 @@
   position: fixed;
   display: none;
   transition: 0.4s;
+  color: rgba(0,0,0,.87);
+	background-color: hsla(0,0%,60%,.2);
+	border-color: hsla(0,0%,60%,.2);
 }
-
+#to-top .btn {
+	margin-bottom: 0;
+}
+#to-top .btn:hover {
+	background-color: hsla(0, 3%, 56%, 0.74);
+}
 /* banner-nha */
 #asset-banner {
   width: 100%;
