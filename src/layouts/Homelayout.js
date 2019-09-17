@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
-import {withRouter} from 'react-router-dom';
+import $ from 'jquery'
 class Homelayout extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      menuActive: null,
+      scrollPy: null,
       isIndex: false
     }
   }
@@ -13,19 +13,69 @@ class Homelayout extends Component {
   componentWillMount() {
   }
 
-  _handleMenu = async(e, path) => {
-    if(window.location.pathname === '/') {
-      await this.setState({isIndex: true})
+  _handleMenu = async(e, path, isScrollPy) => {
+    if(path) {
+      await this.setState({isIndex: true, scrollPy: path})
+      let el = document.getElementById(path).offsetTop;
+      window.scrollTo({
+        top: el,
+        behavior: 'smooth'
+      })
+      window.addEventListener('scroll', function (param) { 
+
+      }) 
     } else {
-      await this.setState({isIndex: false})
+      await this.setState({isIndex: false, scrollPy: null})
+      window.scrollTo(0, 0)
     }
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll.bind(this));
+  }
+  handleScroll(e) {
+    if(window.location.pathname ==='/') {
+      let oTop = $('#advantage').offset().top - window.innerHeight;
+      let start = 0
+      if (start == 0 && $(window).scrollTop() > oTop) {
+        setTimeout(() => {
+          $('#advantage .quanlity.counter').each(function() {
+            let $this = $(this),
+              countTo = $this.attr('data-count');
+            $({
+              countNum: $this.text()
+            }).animate({
+                countNum: countTo
+              },
+              {
+                duration: 1500,
+                easing: 'swing',
+                step: function() {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                  $this.text(this.countNum);
+                }
+              });
+          });
+          start = 1;
+        }, 300)
+      }
+    }
+  }
   
+  _homePage = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
   
   render() {
-    console.log(this.state);
-    const {isIndex} = this.state;
+    const {isIndex, scrollPy} = this.state;
     return (
       <div>
         <nav
@@ -44,28 +94,28 @@ class Homelayout extends Component {
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <Link to="/">
+            <Link onClick={this._homePage} to="/">
               <img className="logo" src="/resources/asset icon.png" alt="" />
             </Link>
             <div className="collapse navbar-collapse" id="assetNavbar">
               <ul className="navbar-nav mr-auto pl-2">
                 <li className="nav-item">
-                  <NavLink to="/about" activeClassName="active" className="nav-link">Giới thiệu</NavLink>
+                  <NavLink onClick={(e) => this._handleMenu(e, false)} to="/about" activeClassName="active" className="nav-link">Giới thiệu</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink onClick={(e) => this._handleMenu(e, '#about')} activeClassName="active" className="nav-link" to={isIndex ? '#about' : '/#about'}>
+                  <NavLink onClick={(e) => this._handleMenu(e, 'about-asset')} className={"nav-link " + (scrollPy === 'about-asset' ? 'active' : '')} to={isIndex ? '#about-asset' : '/#about-asset'}>
                     Asset là gì ?
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink onClick={(e) => this._handleMenu(e, '#advantage')} activeClassName="active" className="nav-link" to={isIndex ? '#advantage' : '/#advantage'}>
+                  <NavLink onClick={(e) => this._handleMenu(e, 'what-is-asset')} className={"nav-link " + (scrollPy === 'what-is-asset' ? 'active' : '')} to={isIndex ? '#what-is-asset' : '/#what-is-asset'}>
                     Ưu thế
                   </NavLink>
                 </li>
               </ul>
               <ul className="navbar-nav">
                 <li  className="nav-item pl-2">
-                  <NavLink activeClassName="active" className="nav-link" to="/recruitment">
+                  <NavLink onClick={(e) => this._handleMenu(e, false)} activeClassName="active" className="nav-link" to="/recruitment">
                     {" "}
                     Tuyển dụng
                   </NavLink>
@@ -129,7 +179,7 @@ class Homelayout extends Component {
               >
                 <img
                   style={{ width: "48px" }}
-                  src="./resources/facebook icon.png"
+                  src="/resources/facebook icon.png"
                   alt=""
                 />
               </a>
@@ -143,7 +193,7 @@ class Homelayout extends Component {
               >
                 <img
                   style={{ width: "48px" }}
-                  src="./resources/zalo icon.png"
+                  src="/resources/zalo icon.png"
                   alt=""
                 />
               </a>
@@ -157,7 +207,7 @@ class Homelayout extends Component {
               >
                 <img
                   style={{ width: "48px" }}
-                  src="./resources/linkedin icon.png"
+                  src="/resources/linkedin icon.png"
                   alt=""
                 />
               </a>

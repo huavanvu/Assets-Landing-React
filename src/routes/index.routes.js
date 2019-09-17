@@ -22,6 +22,11 @@ const indexRoute = [
         path: "/about",
         exact: false,
         component: AssetAbout
+    },
+    {
+        path: "/recruitment/:id.:urlName",
+        exact: false,
+        component: DetailRecruitment
     }
 ]
 

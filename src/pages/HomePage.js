@@ -1,12 +1,17 @@
 import React, {Component } from 'react';
 
 class HomePage extends Component {
+  constructor(){
+    super();
+    this.about = React.createRef();
+    this.advandtage = React.createRef()
+  }
   render(){
     return( <>
           <div id="asset-banner">
               <div className="asset-banner__bg wow slideInLeft" data-wow-duration="1900ms"><img src="resources/asset network-1.png" alt="" /></div>
             </div>
-            <section id="about" className="scrollspy asset-section">
+            <section ref="about-asset" id="about-asset" className="scrollspy asset-section">
               <div className="asset-section__header d-flex justify-content-center flex-column align-items-center">
                 <div className="asset-section__header-logo wow fadeIn pb-4">
                   <img src="/resources/icon asset nam mau.png" alt="" style={{height:'20%'}} />
@@ -28,12 +33,7 @@ class HomePage extends Component {
                                 <h2>Tìm kiếm Bất Động Sản</h2>
                               </div>
                               <div className="asset-about-have__title-description p-0">
-                                Từ nhà riêng, căn hộ chung cư, đất nền, nhà phố, biệt
-                                thự... cho đến các dự án bất động sản lớn, nhỏ, mọi
-                                Asseter đều có thể tự do tìm kiếm tất cả mặt hàng bất
-                                động sản trên thị trường. Cùng với đó là các thông tin
-                                minh bạch về chủ sở hữu, nhà đầu tư của sản phẩm
-                                được tìm kiếm.
+                                Từ nhà riêng, căn hộ, đất nền, nhà phố,... cho đến các dự án lớn, nhỏ, đều có thể dễ dàng tìm kiếm với các thông tin minh bạch về chủ sở hữu, nhà đầu tư, pháp lý...
                               </div>
                             </div>
                             <div className="col-6 col-lg-4 image-ads pb-45 wow fadeInDown" data-wow-duration="1200ms" data-wow-delay="0.5s" data-src-image-ads>
@@ -42,8 +42,7 @@ class HomePage extends Component {
                                 <h2>Thẩm định giá Bất Động Sản</h2>
                               </div>
                               <div className="asset-about-have__title-description p-0">
-                                Được đảm nhận bởi các chuyên gia thẩm định giá hàng
-                                đầu của Asset, hoàn toàn miễn phí.
+                                Được đảm nhận bởi các chuyên gia thẩm định giá hàng đầu của Asset, với những phân tích chuyên sâu về các yếu tố ảnh hưởng đến giá trị bất động sản và hoàn toàn miễn phí.
                               </div>
                             </div>
                             <div className="col-6 col-lg-4 image-ads pb-45 wow fadeInDown" data-wow-duration="1200ms" data-wow-delay="0.8s" data-src-image-ads>
@@ -178,12 +177,12 @@ class HomePage extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-12 col-lg-8 offset-0 offset-lg-2">
-                    <img className="w-100 wow fadeIn" data-wow-duration="6300ms" src="./resources/hoan toan mien phi.png" alt="" />
+                    <img className="w-100 wow fadeIn" data-wow-duration="2000ms" src="./resources/hoan toan mien phi.png" alt="" />
                   </div>
                 </div>
               </div>
             </section>
-            <section id="advantage" className="scrollspy join-with-asset-team pt-3 pt-md-5 pb-3 pb-md-5">
+            <section ref="advantage" id="advantage" className="scrollspy join-with-asset-team pt-3 pt-md-5 pb-3 pb-md-5">
               <div className="asset-section__container">
                 <div className="container-fluid">
                   <div className="row align-items-center">
@@ -191,7 +190,7 @@ class HomePage extends Component {
                       <div className="row">
                         <div className="col-12"><h2 className="text-center pb-3">Gia nhập <span className="color-1C6BAE">ngôi nhà chung Asset</span></h2></div>
                         <div className="col-3 text-center">
-                          <div className="quanlity counter color-1C6BAE" data-count="8">
+                          <div className="quanlity counter color-1C6BAE" data-count="185">
                             0
                           </div>
                           <div className="name-department">
@@ -199,7 +198,7 @@ class HomePage extends Component {
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity counter color-1C6BAE" data-count="20">
+                          <div className="quanlity counter color-1C6BAE" data-count="950">
                             0
                           </div>
                           <div className="name-department">
@@ -207,7 +206,7 @@ class HomePage extends Component {
                           </div>
                         </div>
                         <div className="col-3 text-center">
-                          <div className="quanlity counter color-1C6BAE" data-count="8">
+                          <div className="quanlity counter color-1C6BAE" data-count="254">
                             0
                           </div>
                           <div className="name-department">
@@ -225,19 +224,19 @@ class HomePage extends Component {
                       </div>
                       <div className="row pt-3 pt-md-5">
                         <div className="col-12 text-center">
-                          <button type="button" className="btn btn-raised btn-lg join-now"><a href="/recruitment" target="_blank" rel="noopener noreferrer"><i className="fa fa-edit" /> Hãy gia nhập ngay</a></button>
+                          <button type="button" className="btn btn-raised btn-lg join-now"><a href="/recruitment" target="_blank" rel="noopener noreferrer"><i className="fa fa-edit" /> &nbsp; Hãy gia nhập ngay</a></button>
                         </div>
                       </div>
                     </div>
                     <div className="col-12 col-xl-6 d-none d-lg-block">
-                      <img className="w-100 wow fadeIn" data-wow-duration="4000ms" src="./resources/welcome.png" alt="" />
+                      <img className="w-100 wow fadeIn" data-wow-duration="1000ms" src="./resources/welcome.png" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
             </section>
             <div className="col-12 col-xl-6 d-block d-lg-none pb-3 pt-5">
-              <img className="w-100 wow fadeIn" data-wow-duration="4000ms" src="./resources/welcome.png" alt="" />
+              <img className="w-100 wow fadeIn" data-wow-duration="1000ms" src="./resources/welcome.png" alt="" />
             </div>
           
   </>

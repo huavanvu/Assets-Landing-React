@@ -274,9 +274,18 @@ section .asset-about-have__title-description {
 #recruitment-detail .recruitment-detail-content__description {
   font-size: 24px;
 }
+#recruitment-detail .recruitment-detail-content {
+  font-size: 24px;
+}
 
 #recruitment-detail .recruitment-detail__footer a {
   color: white;
+}
+
+#recruitment-detail strong {
+  color: black;
+  font-size: 32px;
+  font-weight: 500;
 }
 /* footer-nha */
 footer .partner {
@@ -314,6 +323,10 @@ body, html {
 
 a:hover {
   text-decoration: none !important;
+}
+
+li {
+  list-style: none !important;
 }
 
 .asset-name {
@@ -372,6 +385,9 @@ a:hover {
     font-size: 32px;
   }
   #recruitment-detail .recruitment-detail-content__description {
+    font-size: 20px;
+  }
+  #recruitment-detail .recruitment-detail-content {
     font-size: 20px;
   }
   .p-section-top {
@@ -462,11 +478,19 @@ a:hover {
   #recruitment-detail .recruitment-detail-content__description {
     font-size: 16px;
   }
+  #recruitment-detail .recruitment-detail-content {
+    font-size: 16px;
+  }
   #recruitment-detail .recruitment-detail__header-underline {
     height: 8px;
   }
   #recruitment-detail .recruitment-detail-content .recruitment-detail-content__title-section {
     font-size: 24px;
+  }
+  #recruitment-detail strong {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
   }
   #recruitment-detail .recruitment-detail-content img.working-daily {
     width: 100% !important;
@@ -514,10 +538,16 @@ a:hover {
   #recruitment-detail .recruitment-detail-content__description {
     font-size: 14px;
   }
+  #recruitment-detail .recruitment-detail-content {
+    font-size: 14px;
+  }
   #recruitment-detail .recruitment-detail__header-underline {
     height: 6px;
   }
   #recruitment-detail .recruitment-detail-content .recruitment-detail-content__title-section {
+    font-size: 20px;
+  }
+  #recruitment-detail strong {
     font-size: 20px;
   }
 
