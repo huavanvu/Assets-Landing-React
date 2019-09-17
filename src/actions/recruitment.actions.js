@@ -3,7 +3,10 @@ import * as actionType from './../constants/actionType'
 export const REQUET_GetRecruitmentPositionList = () => {
   return async dispatch => {
     const response = await apiService('recruit/all');
-    dispatch(setCruitmentListIntoReducer(response.data))
+    if(response && response.data) {
+      dispatch(setCruitmentListIntoReducer(response.data))
+    }
+    
   }
 }
 const setCruitmentListIntoReducer = (cruitmentList) => ({
