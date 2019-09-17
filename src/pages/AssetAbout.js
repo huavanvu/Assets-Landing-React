@@ -10,7 +10,7 @@ export default class AssetAbout extends Component {
               style={{maxWidth: "100%"}}
               width="1024" height="578"
               allowFullScreen
-              src="https://www.youtube.com/embed/av1Ob5zjN-A">
+              src="https://www.youtube.com/embed/av1Ob5zjN-A?&autoplay=1">
             </iframe>
           </div>
           <div className="text-center mt-5 mb-5">

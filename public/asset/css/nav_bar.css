@@ -68,6 +68,7 @@
   bottom: 5%;
   position: fixed;
   display: none;
+  transition: 0.4s;
 }
 
 /* banner-nha */
