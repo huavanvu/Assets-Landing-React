@@ -116,8 +116,8 @@ class DetailRecruitment extends Component {
                     </div> */}
                     <div className="recruitment-detail__footer">
                       <div className="d-flex justify-content-between">
-                        <button onClick={this._goBack} type="button" className="btn btn-lg color-1C6BAE apply-button">Back</button>
-                        <button type="button" className="btn btn-lg color-1C6BAE"><a className="color-1C6BAE" href="https://docs.google.com/forms/d/e/1FAIpQLSdowcuqcF4-TCewPrBCxHMiWroLm0lQfdoMqhdqVSU6jPygmQ/viewform"  target="_blank">Aplly Here</a></button>
+                        <button onClick={this._goBack} type="button" className="btn btn-lg btn-info">Back</button>
+                        <button type="button" className="btn btn-lg bg-danger apply-button"><a className="" href="https://docs.google.com/forms/d/e/1FAIpQLSdowcuqcF4-TCewPrBCxHMiWroLm0lQfdoMqhdqVSU6jPygmQ/viewform"  target="_blank">Aplly Here</a></button>
                       </div>
                     </div>
                   </div>
