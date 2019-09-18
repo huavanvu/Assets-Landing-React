@@ -288,7 +288,7 @@ section .asset-about-have__title-description {
 }
 
 #recruitment-detail .recruitment-detail__footer a {
-  color: white;
+  /* color: white; */
 }
 
 #recruitment-detail strong {
