@@ -259,6 +259,7 @@ section .asset-about-have__title-description {
 
 #recruitment-detail .recruitment-detail__header-job-name{
   font-size: 64px;
+  text-align: center;
 }
 #recruitment-detail .container {
   border: 2px solid #707070;
@@ -288,7 +289,10 @@ section .asset-about-have__title-description {
 }
 
 #recruitment-detail .recruitment-detail__footer a {
-  /* color: white; */
+  color: white;
+}
+#recruitment-detail .recruitment-detail__footer .apply-button {
+  background-color: #ed1c24;
 }
 
 #recruitment-detail strong {

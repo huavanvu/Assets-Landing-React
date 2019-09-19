@@ -34,41 +34,7 @@
         new WOW().init();
     }); 
     </script>
-    <!-- <script>
-      window.addEventListener('DOMContentLoaded', () => {
-      if(window.location.pathname ==='/') {
-        console.log(window.location.pathname);
-        let start = 0
-        $(window).scroll(function() {
-        let oTop = $('#advantage').offset().top - window.innerHeight;
-        if (start == 0 && $(window).scrollTop() > oTop) {
-          $('#advantage .quanlity.counter').each(function() {
-            let $this = $(this),
-              countTo = $this.attr('data-count');
-            $({
-              countNum: $this.text()
-            }).animate({
-                countNum: countTo
-              },
-              {
-                duration: 2000,
-                easing: 'swing',
-                step: function() {
-                  $this.text(Math.floor(this.countNum));
-                },
-                complete: function() {
-                  $this.text(this.countNum);
-                }
-              });
-          });
-          start = 1;
-        }
-        });
-      }
-    });
-    </script> -->
     <script>
-      //For menu click outside hide
       $(function() {
         $(document).click(function (event) {
           $('#asset-nav .navbar-collapse').collapse('hide');
@@ -91,8 +57,17 @@
             buttonScrollTop.style.display = "none";
           }
         });
-        // buttonScrollTop.style.display = "none";
       });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136355098-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-136355098-4');
     </script>
  
 </body>
