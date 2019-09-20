@@ -18,7 +18,7 @@
 }
 
 /* // iframe YT */
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   #asset-about iframe {
     height: 190px;
   }
@@ -37,4 +37,4 @@
   #asset-about iframe {
     height: 362px;
   }
-}
+} */

@@ -1,7 +1,7 @@
 import HomePage from '../pages/HomePage';
 import Recruitment from '../pages/Recruitment';
 import DetailRecruitment from '../pages/DetailRecruitment';
-import AssetAbout from '../pages/AssetAbout';
+import AboutPage from '../pages/AboutPage';
 const indexRoute = [
     {
         path: "/",
@@ -21,7 +21,7 @@ const indexRoute = [
     {
         path: "/about",
         exact: false,
-        component: AssetAbout
+        component: AboutPage
     },
     {
         path: "/recruitment/:id.:urlName",
