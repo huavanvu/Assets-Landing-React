@@ -1,3 +1,16 @@
+#player .player-about-asset .html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen { background-color: unset !important}
+#player .player-about-asset body {background-color: transparent !important}
+#player .player-about-asset .html5-video-player:not(.ytp-transparent) {background-color:  transparent !important }
+.player-about-asset {width:100%; max-width: 100%;height:578px;}
+
+@media screen and (max-width: 450px) {
+   .player-about-asset {width:100%;height:180px;}
+}
+
+@media screen and (max-width: 768px) {
+   /* .player-about-asset {width:auto;height:325px;} */
+}
+
 #asset-nav .logo {
   width: 140px;
 }

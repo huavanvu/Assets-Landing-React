@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import '../assets/stylesheets/pages/asset-about.css';
-export default class AssetAbout extends Component {
+import {AddScriptTag} from '../untils/addScriptTag'
+export default class AboutPage extends Component {
+  constructor(props){
+    super(props)
+    this.youtuRef = React.createRef();
+  }
   render() {
     return (
+      
       <div id="asset-about" className="p-section-top pb-3 mb-3 pb-md-5 m-md-5">
         <div className="container">
           <div className="text-center">
-            <iframe
-              style={{maxWidth: "100%"}}
-              width="1024" height="578"
-              allowFullScreen
-              allow="autoplay"
-              src="https://www.youtube.com/embed/av1Ob5zjN-A?&autoplay=1">
-            </iframe>
+          <div id="player" className="player-about-asset" style={{backgroundColor: "transparent !important"}}></div>
           </div>
           <div className="text-center mt-5 mb-5">
             <img src="../../resources/gioithieu/Rectangle 4.png" />

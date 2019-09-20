@@ -10,9 +10,6 @@ class Homelayout extends Component {
     }
   }
 
-  componentWillMount() {
-  }
-
   _handleMenu = async(e, path, isScrollPy) => {
     if(path) {
       await this.setState({isIndex: true, scrollPy: path})
