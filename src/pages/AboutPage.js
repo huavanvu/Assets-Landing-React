@@ -1,18 +1,34 @@
 import React, { Component } from 'react'
 import '../assets/stylesheets/pages/asset-about.css';
-import {AddScriptTag} from '../untils/addScriptTag'
+import YouTube from 'react-youtube';
 export default class AboutPage extends Component {
   constructor(props){
     super(props)
-    this.youtuRef = React.createRef();
+  }
+  _onReady = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.playVideo();
   }
   render() {
+    const opts = {
+      playerVars: {
+        autoplay: 1
+      }
+    };
+    
     return (
       
       <div id="asset-about" className="p-section-top pb-3 mb-3 pb-md-5 m-md-5">
         <div className="container">
           <div className="text-center">
-          <div id="player" className="player-about-asset" style={{backgroundColor: "transparent !important"}}></div>
+          <div className="iframe-container">
+          <YouTube
+            className="iframe"
+            videoId="av1Ob5zjN-A"
+            opts={opts}
+            onReady={this._onReady}
+          />
+          </div>
           </div>
           <div className="text-center mt-5 mb-5">
             <img src="../../resources/gioithieu/Rectangle 4.png" />
