@@ -24,7 +24,7 @@ export default class AboutPage extends Component {
           <div className="iframe-container">
           <YouTube
             className="iframe"
-            videoId="av1Ob5zjN-A"
+            videoId="HwQwlOUFi6o"
             opts={opts}
             onReady={this._onReady}
           />
